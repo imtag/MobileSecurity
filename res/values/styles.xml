@@ -1,0 +1,76 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- 标题 -->
+    <style name="setup_title_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">#2371F3</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="setup_desc_style">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- 显示归属地样式 对话框 -->
+    <style name="LocationDialogStyle" parent="@android:style/Theme.Dialog">
+
+        <!-- 背景 -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <!-- 阴影的设置 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 去掉标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置点击外面关闭 -->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <!-- 水平进度条样式 -->
+    <style name="MyHorizontalProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress_horizontal</item>
+        <item name="android:minHeight">7dip</item>
+        <item name="android:maxHeight">7dip</item>
+        <item name="android:mirrorForRtl">true</item>
+    </style>
+
+    <!-- 软件管家弹出对话框样式 -->
+    <style name="MyPopupWindow">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+    
+    <!-- 桌面小工具样式 -->
+     <style name="widget_text">
+        <item name="android:textSize">16.0dip</item>
+    </style>
+    
+</resources>

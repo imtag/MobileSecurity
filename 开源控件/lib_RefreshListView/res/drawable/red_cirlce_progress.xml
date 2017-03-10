@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="0"
+    android:toDegrees="360"
+    android:pivotX="50%"
+    android:pivotY="50%" >
+
+    <shape
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:innerRadiusRatio="2.5"
+        android:shape="ring"
+        android:thicknessRatio="15"
+        android:useLevel="false" >
+
+        <!-- 设置渐变颜色android:type="sweep" 渐变的颜色 -->
+        <gradient
+            android:centerColor="#ff3333"
+            android:endColor="#ffffff"
+            android:startColor="#ff0000"
+            android:type="sweep" >
+        </gradient>
+    </shape>
+
+</rotate>

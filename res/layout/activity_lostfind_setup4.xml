@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:orientation="vertical" >
+        
+        
+        <TextView
+            style="@style/setup_title_style"
+            android:text="4.设置完成" />
+
+        <CheckBox
+            android:id="@+id/cb_setup4_isopenlostfind"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="打钩开启防盗保护" />
+
+        <TextView
+            android:id="@+id/tv_setup4_showstate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="防盗保护已经关闭" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <!-- 默认点 -->
+
+        <View
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@android:drawable/presence_invisible" />
+
+        <View
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@android:drawable/presence_invisible" />
+        <!-- 选中点 -->
+
+        <View
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@android:drawable/presence_invisible" />
+
+        <View
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@android:drawable/presence_online" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/step_4" />
+
+         <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/dialog_button_selector"
+            android:onClick="prePage"
+            android:padding="10dp"
+            android:src="@drawable/pre" />
+
+        <Button
+            android:onClick="nextPage"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/dialog_button_selector"
+            android:text="OK"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</LinearLayout>

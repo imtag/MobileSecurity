@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">手机安全中心</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_lost_find">LostFindActivity</string>
+    <string name="sample_device_admin_description">必须激活,不然你的手机丢了找不到</string>
+    <string name="sample_device_admin">远程锁屏</string>
+	<string name="accessibility_service_label">看门狗</string>
+	<string name="accessibility_service_description">开启看门狗服务</string>
+</resources>

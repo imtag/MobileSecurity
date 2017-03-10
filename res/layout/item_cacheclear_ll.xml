@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="@drawable/home_item_pressed_style" >
+
+    <!-- app图标 -->
+
+    <ImageView
+        android:id="@+id/item_iv_cache_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/ic_launcher" />
+
+    <!-- 名字 -->
+
+    <TextView
+        android:id="@+id/item_tv_cache_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/item_iv_cache_icon"
+        android:text="手机淘宝"
+        android:textColor="#363535"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/item_cb_cache_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:button="@drawable/checkbox_selector"
+        android:checked="true"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/item_tv_cache_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/item_cb_cache_check"
+        android:text="4.3MB"
+        android:textColor="#ff888888"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/item_iv_cache_icon"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/space_line" />
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#e5e5e5"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="添加黑名单"
+        android:textColor="#333333"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#20000000" />
+    <TextView
+        android:id="@+id/popupwindow_addblacklist_phone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popupwindow_tv_selector"
+        android:drawableLeft="@drawable/blacklist2"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:text="从电话记录导入"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#10000000" />
+
+    <TextView
+        android:id="@+id/popupwindow_addblacklist_sms"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popupwindow_tv_selector"
+        android:drawableLeft="@drawable/blacklist3"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:text="从短信记录导入"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#10000000" />
+
+    <TextView
+        android:id="@+id/popupwindow_addblacklist_friend"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popupwindow_tv_selector"
+        android:drawableLeft="@drawable/blacklist4"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:text="从联系人导入"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#10000000" />
+
+    <TextView
+        android:id="@+id/popupwindow_addblacklist_Manual"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popupwindow_tv_selector"
+        android:drawableLeft="@drawable/blacklist1"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:text="手动添加 "
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+</LinearLayout>

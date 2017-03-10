@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <TextView
+        android:id="@+id/dialog_tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="#2371F3"
+        android:gravity="center"
+        android:text="添加联系人"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <!-- 黑名单号码一 -->
+
+    <EditText
+        android:id="@+id/et_dialog_addblacklist_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入黑名单号码"
+        android:inputType="phone"
+        android:textColor="#000000"
+        android:textColorHint="#BEBEBE" />
+
+    <!-- 拦截模式复选框 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        >
+
+        <CheckBox
+            android:id="@+id/cb_dialog_addblacklist_phonemode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/checkbox_selector"
+            android:text="拦截来电"
+            android:textColor="#333333" />
+
+        <CheckBox
+            android:id="@+id/cb_dialog_addblacklist_smsmode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:button="@drawable/checkbox_selector"
+            android:text="拦截短信"
+            android:textColor="#333333" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp" >
+
+        <Button
+            android:id="@+id/bt_dialog_addblacklist_add"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_buttonstyle"
+            android:text="添加"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_dialog_addblacklist_cancel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_buttonstyle"
+            android:text="取消"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

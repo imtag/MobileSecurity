@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/setup_title_style"
+            android:text="1.欢迎使用手机防盗" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="您的手机防盗卫士" />
+
+        <TextView
+            style="@style/setup_desc_style"
+            android:drawableLeft="@drawable/guard1"
+            android:text="Sim卡变更警报" />
+
+        <TextView
+            style="@style/setup_desc_style"
+            android:drawableLeft="@drawable/guard2"
+            android:text="GPS追踪" />
+
+        <TextView
+            android:drawableLeft="@drawable/guard3"
+            style="@style/setup_desc_style"
+            android:text="远程锁屏" />
+
+        <TextView
+            android:drawableLeft="@drawable/guard4"
+            style="@style/setup_desc_style"
+            android:text="远程清除数据" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <!-- 选中点 -->
+
+        <View
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@android:drawable/presence_online" />
+        <!-- 默认点 -->
+
+        <View
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@android:drawable/presence_invisible" />
+
+        <View
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@android:drawable/presence_invisible" />
+
+        <View
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@android:drawable/presence_invisible" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/step_1" />
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/dialog_button_selector"
+            android:onClick="nextPage"
+            android:padding="10dp"
+            android:src="@drawable/next" />
+    </RelativeLayout>
+
+</LinearLayout>

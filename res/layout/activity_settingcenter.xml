@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tfx="http://schemas.android.com/apk/res/com.tfx.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eae8e8"
+    android:orientation="vertical" >
+
+    <com.tfx.mobilesafe.view.TitleView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tfx:title="设置中心" />
+
+    <!-- 自动更新 -->
+
+    <com.tfx.mobilesafe.view.SettingCenterItem
+        android:id="@+id/sci_autoupdate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        tfx:bgselector="first"
+        tfx:desc="自动更新服务" />
+
+    <com.tfx.mobilesafe.view.SettingCenterItem
+        android:id="@+id/sci_blackintercept"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tfx:bgselector="last"
+        tfx:desc="黑名单拦截服务" />
+
+    <com.tfx.mobilesafe.view.SettingCenterItem
+        android:id="@+id/sci_incoming_phonelocation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        tfx:bgselector="first"
+        tfx:desc="显示来电和外拨归属地" />
+
+    <com.tfx.mobilesafe.view.SettingCenterItem
+        android:id="@+id/sci_locationstyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tfx:bgselector="last"
+        tfx:desc="归属地显示风格(默认)"
+        tfx:isdisabletoggle="true" />
+</LinearLayout>

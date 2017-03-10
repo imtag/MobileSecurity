@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/home_item_pressed_style"
+    android:layout_height="wrap_content"
+    android:padding="12dp" >
+
+    <!-- app图标 -->
+
+    <ImageView
+        android:id="@+id/iv_item_appmanager_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher" />
+
+    <!-- 名字和版本号  -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/iv_item_appmanager_icon"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_item_appmanager_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机淘宝"
+            android:textColor="#363535"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_item_appmanager_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="版本: 7.7.3"
+            android:textColor="#ff888888"
+            />
+    </LinearLayout>
+
+    <!-- 占用大小 -->
+    <TextView
+        android:id="@+id/tv_item_appmanager_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:text="62.4M"
+        android:textColor="#ff888888"
+        android:textSize="16sp" />
+
+</RelativeLayout>

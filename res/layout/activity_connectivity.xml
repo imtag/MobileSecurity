@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tfx="http://schemas.android.com/apk/res/com.tfx.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.tfx.mobilesafe.view.TitleView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tfx:title="流量统计" />
+
+    <ListView
+        android:id="@+id/lv_connectivity"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+</LinearLayout>

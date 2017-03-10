@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tfx="http://schemas.android.com/apk/res/com.tfx.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.tfx.mobilesafe.view.TitleView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tfx:title="软件管家" />
+
+    <com.tfx.mobilesafe.view.TextProgressView
+        android:id="@+id/tpv_appmanager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </com.tfx.mobilesafe.view.TextProgressView>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include
+            android:layout_width="match_parent"
+            layout="@layout/progressbar_circle" />
+
+        <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+            android:id="@+id/lv_appmanager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+</LinearLayout>

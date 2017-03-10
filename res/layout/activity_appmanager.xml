@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/setup_title_style"
+        android:text="软件管家" />
+
+    <com.tfx.mobilesafe.view.TextProgressView
+        android:id="@+id/tpv_appmanager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </com.tfx.mobilesafe.view.TextProgressView>
+
+    <TextView
+        android:id="@+id/tv_appmanager_userappcount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f4f4f4"
+        android:paddingBottom="5dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="5dp"
+        android:text="用户软件(40 / 50)"
+        android:textColor="#ff888888"
+        android:textSize="15sp" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include
+            android:layout_width="match_parent"
+            layout="@layout/progressbar_circle" />
+
+        <ListView
+            android:id="@+id/lv_appmanager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tfx="http://schemas.android.com/apk/res/com.tfx.mobilesafe"
+    xmlns:custom="http://schemas.android.com/apk/res/com.tfx.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eae8e8"
+    android:orientation="vertical" >
+
+    <com.tfx.mobilesafe.view.TitleView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tfx:title="高级工具" />
+
+    <!-- 自动更新 -->
+
+    <com.tfx.mobilesafe.view.SettingCenterItem
+        android:id="@+id/sci_mobilelocation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        tfx:bgselector="first"
+        tfx:desc="电话归属地查询"
+        tfx:isdisabletoggle="true" />
+
+    <com.tfx.mobilesafe.view.SettingCenterItem
+        android:id="@+id/sci_servicelocation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tfx:bgselector="last"
+        tfx:desc="服务号码查询"
+        tfx:isdisabletoggle="true" />
+
+    <com.tfx.mobilesafe.view.SettingCenterItem
+        android:id="@+id/sci_smsbackup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        tfx:bgselector="first"
+        tfx:desc="短信备份"
+        tfx:isdisabletoggle="true" />
+
+    <com.tfx.mobilesafe.view.SettingCenterItem
+        android:id="@+id/sci_smsrestore"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tfx:bgselector="last"
+        tfx:desc="短信还原"
+        tfx:isdisabletoggle="true" />
+
+    <com.daimajia.numberprogressbar.NumberProgressBar
+        android:id="@+id/npb_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        custom:progress_max="100"
+        custom:progress_reached_bar_height="1.5dp"
+        custom:progress_reached_color="#3498DB"
+        custom:progress_text_color="#3498DB"
+        custom:progress_text_offset="1dp"
+        custom:progress_text_size="10sp"
+        custom:progress_text_visibility="visible"
+        custom:progress_unreached_bar_height="0.75dp"
+        custom:progress_unreached_color="#CCCCCC" />
+
+    <com.tfx.mobilesafe.view.SettingCenterItem
+        android:id="@+id/sci_applock"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        tfx:bgselector="first"
+        tfx:desc="程序锁"
+        tfx:isdisabletoggle="true" />
+
+    <com.tfx.mobilesafe.view.SettingCenterItem
+        android:id="@+id/sci_watchdog2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tfx:bgselector="middle"
+        tfx:desc="看门狗(优先选择)" />
+
+    <com.tfx.mobilesafe.view.SettingCenterItem
+        android:id="@+id/sci_watchdog1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tfx:bgselector="last"
+        tfx:desc="看门狗(accessibility)" />
+
+</LinearLayout>

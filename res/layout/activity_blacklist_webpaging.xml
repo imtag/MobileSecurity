@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 标题 -->
+
+        <TextView
+            style="@style/setup_title_style"
+            android:text="通讯卫士" />
+
+        <!-- 添加黑名单的按钮 -->
+
+        <ImageView
+            android:id="@+id/iv_blacklist_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/blacklist_add_iv_selector" />
+    </RelativeLayout>
+
+    <!-- 数据部分 -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <!-- 加载数据进度 -->
+
+        <include layout="@layout/progressbar_circle" />
+
+        <!-- 有数据 -->
+
+        <ListView
+            android:id="@+id/lv_blacklist_showdata"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+        </ListView>
+
+        <!-- 没数据 -->
+
+        <ImageView
+            android:id="@+id/iv_blacklist_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/empty"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!-- 分页按钮的添加 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_button_selector"
+            android:onClick="homePage"
+            android:text="首页"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_button_selector"
+            android:onClick="prevPage"
+            android:padding="12dp"
+            android:src="@drawable/pre" />
+
+        <TextView
+            android:id="@+id/tv_pagingblack_currentpage"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_button_selector"
+            android:gravity="center"
+            android:text="1/10"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/et_pagingblack_pagenumber"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_button_selector"
+            android:onClick="goPage"
+            android:text="跳转"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_button_selector"
+            android:onClick="nextPage"
+            android:padding="12dp"
+            android:src="@drawable/next" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_button_selector"
+            android:onClick="lastPage"
+            android:text="末页"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

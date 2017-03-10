@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tfx="http://schemas.android.com/apk/res/com.tfx.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+    <com.tfx.mobilesafe.view.TitleView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tfx:title="骚扰拦截" />
+    
+<!--     <TextView
+        style="@style/setup_title_style"
+        android:text="通讯卫士" /> -->
+
+    <!-- 数据部分 -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <!-- 加载数据进度 -->
+
+        <include layout="@layout/progressbar_circle" />
+
+        <!-- 有数据 -->
+
+        <com.itheima11.refreshlistview_lib.RefreshListView
+            android:id="@+id/lv_blacklist_showdata"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+        </com.itheima11.refreshlistview_lib.RefreshListView>
+
+        <!-- 没数据 -->
+
+        <TextView
+            android:id="@+id/tv_blacklist_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/empty"
+            android:gravity="center"
+            android:text="暂无黑名单记录"
+            android:textColor="#515151"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:id="@+id/iv_blacklist_add"
+        style="@drawable/blacklist_add_buttonstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/blacklist_add_buttonstyle"
+        android:text="添加"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SettingCenterItem">
+        <attr name="desc" format="string" />
+        <attr name="bgselector">
+            <enum name="first" value="0" />
+            <enum name="middle" value="1" />
+            <enum name="last" value="2" />
+        </attr>
+        <attr name="isdisabletoggle" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="TitleView">
+        <attr name="title" format="string" />
+    </declare-styleable>
+
+</resources>

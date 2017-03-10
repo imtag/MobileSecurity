@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:textSize="18sp"
+        android:layout_height="55dp"
+        style="@style/setup_title_style"
+        android:text="归属地显示风格" />
+
+    <ListView
+        android:id="@+id/lv_locationstyle_dialog_content"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp" >
+    </ListView>
+
+</LinearLayout>

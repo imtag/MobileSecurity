@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tfx="http://schemas.android.com/apk/res/com.tfx.mobilesafe"
+    xmlns:custom="http://schemas.android.com/apk/res/com.tfx.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="#2371F3"
+        android:orientation="vertical" >
+
+    <com.tfx.mobilesafe.view.TitleView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tfx:title="病毒查杀" />
+
+        <FrameLayout
+            android:id="@+id/fl_antivirus"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <!-- 扫描完成 -->
+
+            <com.github.lzyzsd.circleprogress.ArcProgress
+                android:id="@+id/ap_antivirus_scanfinish"
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                custom:arc_angle="280.0"
+                custom:arc_finished_color="#B8C7E4"
+                custom:arc_progress="100"
+                custom:arc_suffix_text="分"
+                custom:arc_suffix_text_padding="18dp"
+                custom:arc_suffix_text_size="18sp"
+                custom:arc_text_color="#ffffff"
+                custom:arc_text_size="60sp" />
+
+            <!-- 扫描中 扫描进度 -->
+
+            <com.github.lzyzsd.circleprogress.ArcProgress
+                android:id="@+id/ap_antivirus_scanProgress"
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                android:layout_gravity="center"
+                custom:arc_angle="360"
+                custom:arc_bottom_text="正在扫描"
+                custom:arc_bottom_text_size="0sp"
+                custom:arc_progress="0"
+                custom:arc_suffix_text="%"
+                custom:arc_suffix_text_padding="18dp"
+                custom:arc_suffix_text_size="20sp"
+                custom:arc_text_color="#ffffff"
+                custom:arc_text_size="70sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal" >
+
+                <!-- 重新扫描 -->
+
+                <Button
+                    android:id="@+id/bt_antivirus_scanAgain"
+                    android:layout_width="110dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="32dp"
+                    android:background="@drawable/buttonstyle"
+                    android:onClick="scanAgain"
+                    android:text="重新扫描"
+                    android:textColor="@color/guide_btn_color_selector"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <!-- 正在扫描的条目 -->
+
+                <TextView
+                    android:id="@+id/tv_antivirus_scandesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="正在扫描: "
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <!-- 重新开始和结束的动画 -->
+
+            <LinearLayout
+                android:id="@+id/ll_antivirus_animation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- 左半边图片 -->
+
+                <ImageView
+                    android:id="@+id/iv_antivirus_leftImage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <!-- 右半边图片 -->
+
+                <ImageView
+                    android:id="@+id/iv_antivirus_rightImage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- 已完成扫描的软件 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/ll_antivirus_scancompleted"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/bt_antivirus_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/blacklist_add_buttonstyle"
+            android:onClick="finish"
+            android:text="完成"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

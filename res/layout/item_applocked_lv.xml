@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <!-- app图标 -->
+
+    <ImageView
+        android:id="@+id/item_iv_applock_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_launcher" />
+
+    <!-- 名字 -->
+
+    <TextView
+        android:id="@+id/item_tv_applock_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/item_iv_applock_icon"
+        android:paddingRight="52dp"
+        android:singleLine="true"
+        android:text="手机淘宝"
+        android:textColor="#363535"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/item_iv_applock_lockState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/lock" />
+
+</RelativeLayout>

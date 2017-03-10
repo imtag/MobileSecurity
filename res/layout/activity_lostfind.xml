@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tfx="http://schemas.android.com/apk/res/com.tfx.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.tfx.mobilesafe.view.TitleView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tfx:title="防盗丢失" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/dialog_button_selector"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="安全号码"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/tv_lostfind_safenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="1111"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/dialog_button_selector"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="防盗保护是否开启"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lock" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/dialog_button_selector"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="intosetup"
+        android:padding="5dp"
+        android:text="点击重新进入设置向导界面"
+        android:textColor="#ffffff" />
+
+    <TextView
+        style="@style/setup_desc_style"
+        android:drawableLeft="@drawable/guard1"
+        android:text="Sim卡变更警报" />
+
+    <TextView
+        style="@style/setup_desc_style"
+        android:drawableLeft="@drawable/guard2"
+        android:text="GPS追踪#*gps*#" />
+
+    <TextView
+        style="@style/setup_desc_style"
+        android:drawableLeft="@drawable/guard3"
+        android:text="远程锁屏#*lockscreen*#" />
+
+    <TextView
+        style="@style/setup_desc_style"
+        android:drawableLeft="@drawable/guard4"
+        android:text="远程清除数据#*wipedata*#" />
+
+    <TextView
+        style="@style/setup_desc_style"
+        android:drawableLeft="@drawable/guard5"
+        android:text="播放报警音乐#*music*#" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </RelativeLayout>
+
+</LinearLayout>

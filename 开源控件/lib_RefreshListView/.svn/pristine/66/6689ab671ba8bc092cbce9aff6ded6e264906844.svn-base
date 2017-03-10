@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 下拉刷新 -->
+	<include layout="@layout/head_listview_refresh"/>
+	
+	<!-- 代码方式添加轮播图 -->
+</LinearLayout>

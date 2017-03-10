@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/setup_title_style"
+            android:text="2.手机卡的绑定" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="通过绑定sim卡:\n下次重启手机,如果sim卡不一致,就会给安全号码发送信息" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" >
+
+            <Button
+                android:onClick="bindSim"
+                android:textColor="#ffffff"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/dialog_button_selector"
+                android:text="点击绑定/解绑sim卡" />
+
+            <ImageView
+                android:id="@+id/setup2_iv_bindstate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               	android:layout_alignParentRight="true"
+               	android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/unlock" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <!-- 默认点 -->
+
+        <View
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@android:drawable/presence_invisible" />
+        <!-- 选中点 -->
+
+        <View
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@android:drawable/presence_online" />
+
+        <View
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@android:drawable/presence_invisible" />
+
+        <View
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@android:drawable/presence_invisible" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/step_2" />
+
+        <ImageView
+            android:onClick="prePage"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/dialog_button_selector"
+            android:padding="10dp"
+            android:src="@drawable/pre" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/dialog_button_selector"
+            android:onClick="nextPage"
+            android:padding="10dp"
+            android:src="@drawable/next" />
+    </RelativeLayout>
+
+</LinearLayout>

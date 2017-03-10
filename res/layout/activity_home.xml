@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.tfx.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#2371F3"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:gravity="bottom"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="手机安全中心"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <!-- 设置中心 -->
+
+            <ImageView
+                android:id="@+id/home_iv_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:src="@drawable/home_settingbutton_selector" />
+
+            <!-- 流量排行 -->
+
+            <ImageView
+                android:id="@+id/home_iv_flow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:layout_toLeftOf="@id/home_iv_setting"
+                android:clickable="true"
+                android:src="@drawable/home_flowbutton_selector" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_home"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <com.github.lzyzsd.circleprogress.ArcProgress
+                android:id="@+id/ap_home"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:clickable="true"
+                custom:arc_angle="360"
+                custom:arc_bottom_text_size="0sp"
+                custom:arc_finished_color="#B8C7E4"
+                custom:arc_progress="100"
+                custom:arc_suffix_text="分"
+                custom:arc_suffix_text_padding="34dp"
+                custom:arc_suffix_text_size="0sp"
+                custom:arc_text_color="#ffffff"
+                custom:arc_text_size="80sp"
+                custom:arc_unfinished_color="#B8C7E4" />
+
+            <TextView
+                android:id="@+id/tv_home_scanVirus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="点击杀毒"
+                android:textColor="#95ffffff"
+                android:textSize="18sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- 360度翻转logo -->
+
+    <ImageView
+        android:id="@+id/home_iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="2"
+        android:src="@drawable/ic_logo_small"
+        android:visibility="gone" />
+
+    <!-- 滚动文字 -->
+
+    <com.tfx.mobilesafe.view.FocusTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="手机安全中心手机安全中心手机安全中心手机安全中心手机安全中心手机安全中心手机安全中心手机安全中心手机安全中心手机安全中心"
+        android:textColor="#ff0000"
+        android:visibility="gone" />
+
+    <!-- 主菜单gridview -->
+
+    <GridView
+        android:id="@+id/home_gv"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#40cccccc"
+        android:gravity="center"
+        android:horizontalSpacing="1dp"
+        android:numColumns="3"
+        android:verticalSpacing="1dp" >
+    </GridView>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#2371F3" >
+
+    <ImageButton
+        android:id="@+id/title_iv_goback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/goback_button_style"
+        android:src="@drawable/goback" />
+
+    <TextView
+        android:id="@+id/title_tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="软件管家"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+</RelativeLayout>

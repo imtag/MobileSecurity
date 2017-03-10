@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/home_item_pressed_style"
+    android:padding="12dp" >
+
+    <!-- app图标 -->
+
+    <ImageView
+        android:id="@+id/iv_item_connectivity_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher" />
+
+    <!-- 名字和版本号 -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/iv_item_connectivity_icon"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_item_connectivity_sedSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送: 313kb"
+            android:textColor="#ff888888"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_item_connectivity_revSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="接收: 120kb"
+            android:textColor="#ff888888"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- 占用大小 -->
+
+    <TextView
+        android:id="@+id/tv_item_connectivity_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:text="3G"
+        android:textColor="#ff888888"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="versionurl">http://192.168.1.104:8080/mobilesafe_version.json</string><!-- 软件版本url -->
+	<string name="virusversionurl">http://192.168.1.104:8080/MobileSafeServer/servlet/VersionServlet</string><!-- 病毒库版本url -->
+	<string name="virusdatas">http://192.168.1.104:8080/MobileSafeServer/servlet/NewVirusServlet</string><!-- 新病毒库 -->
+</resources>

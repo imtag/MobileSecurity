@@ -1,0 +1,7 @@
+<device-admin xmlns:android="http://schemas.android.com/apk/res/android">
+  <uses-policies>
+    <reset-password /> 重置解锁密码
+    <force-lock /> 强制锁屏
+    <wipe-data /> 清除数据
+  </uses-policies>
+</device-admin>

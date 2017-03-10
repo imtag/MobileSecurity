@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <!-- app图标 -->
+
+    <ImageView
+        android:id="@+id/item_iv_cache_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/ic_launcher" />
+
+    <!-- 名字 -->
+
+    <TextView
+        android:id="@+id/item_tv_cache_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/item_iv_cache_icon"
+        android:text="手机淘宝"
+        android:textColor="#363535"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/item_iv_cache_icon"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/space_line" />
+
+</RelativeLayout>
